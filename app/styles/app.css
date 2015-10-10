@@ -1,0 +1,90 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+ul {
+	list-style: none;
+}
+li {
+	font-size:0px;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-spacing: 0px;
+	border: 0px;
+}
+a img {
+	border: none;
+}
+* {outline:0px;}
+textarea {resize:none; overflow:auto;}
+
+aside, article, footer, header, nav, section {display:block;}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder
+{opacity:1;}
+input:-webkit-autofill {
+    -webkit-box-shadow:inset 0px 0px 0px 1000px #ffffff;
+    -moz-box-shadow:inset 0px 0px 0px 1000px #ffffff;
+    box-shadow:inset 0px 0px 0px 1000px #ffffff;
+}
+
+/* defaults end */
+html, body {height:100%;}
+body {-webkit-font-smoothing:antialiased;}
+body {font-family:Helvetica, Arial, sans-serif; font-size:13px; color:#333333; font-weight:normal;}
+a, input, textarea, select {font-family:Helvetica, Arial, sans-serif; font-size:13px; color:#333333; font-weight:normal; text-decoration: none;}
+a:hover {text-decoration: underline;}
+.cl {height: 0px; clear: both;}
+.hidden {display: none;}
+
+.block_navigation {height: 40px; line-height: 40px; margin-bottom: 20px; padding: 0px 20px; background-color: #eeeeee;}
+
+.block_category {height: 40px; line-height: 40px; padding-left: 20px; float: left;}
+.block_category .label {padding-right: 10px; float: left;}
+.block_category .select {width: 200px; padding-top: 0px; float: left;}
+.block_category .select select {width: 100%;}
+
+.block_filter {height: 40px; line-height: 40px; padding-right: 20px; float: right;}
+.block_filter li {margin-left: 10px; float: left; display: block;}
+.block_filter li:first-child {margin-left: 0px;}
+.block_filter li.active a {color: rgb(0, 122, 255);}
+
+.block_slider {padding-top: 20px; clear: both;}
+.block_slider .slide {position: relative;}
+.block_slider .slide .lnk {height: 15px; line-height: 15px; padding: 0px 10px; position: absolute; right: 10px; bottom: 10px; background-color: rgba(255, 255, 255, 0.7);}
+.block_slider .slide .lnk a {font-size: 12px;}
+.block_slider .slide .lnk a:hover {text-decoration: none;}
+
+.block_settings_form {padding: 0px 20px; overflow: hidden;}
+.block_settings_form .label {width: 100px; height: 25px; line-height: 25px; margin-bottom: 10px; float: left;}
+.block_settings_form .field {width: 200px; height: 23px; margin-bottom: 10px; padding: 0px 10px; float: left; border: 1px solid #eeeeee;}
+.block_settings_form .field input {width: 100%; height: 14px; padding: 6px 0px; display: block; background-color: transparent; border: 0px;}
+.block_settings_form .button {padding-left: 100px;}
+.block_settings_form .button input {width: 100px; height: 25px; display: block; background-color: #eeeeee; border: 1px solid #eeeeee; cursor: pointer;}

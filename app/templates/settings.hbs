@@ -1,0 +1,19 @@
+<div class="block_navigation">
+    {{#link-to 'index'}}Головна{{/link-to}}
+</div>
+
+<div class="block_settings_form">
+    <form {{action 'saveSettings' sliderWidth sliderHeight on='submit'}}>
+        <div class="label">Ширина</div>
+        <div class="field">{{input type=text value=sliderWidth}}</div>
+        <div class="cl"></div>
+        
+        <div class="label">Висота</div>
+        <div class="field">{{input type=text value=sliderHeight}}</div>
+        <div class="cl"></div>
+        
+        <div class="button"><input type="submit" value="Зберегти"></div>
+    </form>
+</div>
+
+{{outlet}}

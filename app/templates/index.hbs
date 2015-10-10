@@ -1,0 +1,36 @@
+<div class="block_navigation">
+    {{#link-to 'settings'}}Налашнування{{/link-to}}
+</div>
+
+<div class="block_category {{if isFavourites 'hidden'}}">
+    <div class="label">Оберіть категорію</div>
+    <div class="select">
+        {{select-category
+            categories=categories
+            selectCategory="selectCategory"
+        }}
+    </div>
+</div>
+
+{{#if model.length}}
+    <div class="block_filter">
+        <ul>
+            <li class="{{if isAll 'active'}}"><a href="javascript:void(0)" {{action 'setState' 'all'}}>Усі</a></li>
+            <li class="{{if isFavourites 'active'}}"><a href="javascript:void(0)" {{action 'setState' 'favourites'}}>Лише улюблені ({{model.length}})</a></li>
+        </ul>
+    </div>
+{{/if}}
+
+<div class="block_slider">
+    {{#swiper-slider slideList=slideList}}
+        {{#each slideList as |slide|}}
+            {{swiper-slide
+                slide=slide
+                isFavourites=isFavourites
+                addToFavourites="addToFavourites"
+            }}
+        {{/each}}
+    {{/swiper-slider}}
+</div>
+
+{{outlet}}

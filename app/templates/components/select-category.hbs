@@ -1,0 +1,7 @@
+<select {{action 'selectCategory' on='change'}}>
+    {{#each categories as |category|}}
+        <option value="{{category.id}}">{{category.name}}</option>
+    {{/each}}
+</select>
+
+{{yield}}

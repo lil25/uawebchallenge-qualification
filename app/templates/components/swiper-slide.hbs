@@ -1,0 +1,7 @@
+<div class="slide">
+    <img src="{{imgUrl}}" alt="">
+    
+    {{#unless isFavourites}}<div class="lnk"><a href="javascript:void(0)" {{action 'addToFavourites'}}>Додати до улюблених</a></div>{{/unless}}
+</div>
+
+{{yield}}
